@@ -66,6 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contact.html" />
+    <Content Include="css\external\prism.css" />
+    <Content Include="item.html" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap\.csscomb.json" />
     <Content Include="css\bootstrap\.scss-lint.yml" />
@@ -146,6 +149,7 @@
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
+    <None Include="css\owl.carousel.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -161,8 +165,11 @@
       <DependentUpon>main.css</DependentUpon>
     </Content>
     <Content Include="index.html" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\bootstrap.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\owl.carousel.min.js" />
+    <Content Include="scripts\prism.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

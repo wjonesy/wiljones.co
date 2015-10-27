@@ -3,47 +3,52 @@
 //
 
 .btn {
-  display: inline-block;
-  font-weight: $btn-font-weight;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-  border: $border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
-  @include transition(all .2s ease-in-out);
+    display: inline-block;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border: $border-width solid transparent;
+    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+    @include transition(all .2s ease-in-out);
 
-  &,
-  &:active,
-  &.active {
-    &:focus,
-    &.focus {
-      @include tab-focus();
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            @include tab-focus();
+        }
     }
-  }
 
-  @include hover-focus {
-    text-decoration: none;
-  }
-  &.focus {
-    text-decoration: none;
-  }
+    @include hover-focus {
+        text-decoration: none;
+    }
 
-  &:active,
-  &.active {
-    background-image: none;
-    outline: 0;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-  }
+    &.focus {
+        text-decoration: none;
+    }
 
-  &.disabled,
-  &:disabled {
-    cursor: $cursor-disabled;
-    opacity: .65;
-    @include box-shadow(none);
-  }
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+        @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+
+    &.disabled,
+    &:disabled {
+        cursor: $cursor-disabled;
+        opacity: .65;
+        @include box-shadow(none);
+    }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -75,6 +80,9 @@ fieldset[disabled] a.btn {
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
+.btn-white {
+  @include button-variant(#fff, rgba(0, 0, 0, 0.00), #fff);
+}
 
 // Remove all backgrounds
 .btn-primary-outline {
@@ -94,6 +102,9 @@ fieldset[disabled] a.btn {
 }
 .btn-danger-outline {
   @include button-outline-variant($btn-danger-bg);
+}
+.btn-white-outline {
+  @include button-outline-variant(#fff);
 }
 
 

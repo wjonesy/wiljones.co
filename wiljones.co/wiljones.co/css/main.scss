@@ -1,1 +1,22 @@
 ﻿@import "bootstrap/bootstrap.scss";
+
+//override default btn-outline white bg
+.btn-white-outline {
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: #fff;
+         background-color:adjust-hue($brand-primary, -10);
+        border-color: #fff;
+    }
+
+    @include hover {
+        color: #fff;
+        background-color:adjust-hue($brand-primary, -10);
+        border-color: #fff;
+    }
+}
+
+

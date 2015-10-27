@@ -18,13 +18,17 @@
 // Credit: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
 html {
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 

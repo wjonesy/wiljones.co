@@ -32,7 +32,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
+$brand-primary:             #D35400 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -47,7 +47,7 @@ $enable-flex:               false !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
-$enable-transitions:        false !default;
+$enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 
@@ -67,15 +67,18 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    #fff !default;
-$body-color:                 $gray-dark !default;
+//$body-bg:                    #fff !default;
+//$body-color:                 $gray-dark !default;
+
+$body-bg:                    $brand-primary !default;
+$body-color:                 #fff !default;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                 $brand-primary !default;
+$link-color:                 #fff !default;
 $link-decoration:            none !default;
 $link-hover-color:           darken($link-color, 15%) !default;
 $link-hover-decoration:      underline !default;
@@ -116,7 +119,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:               12 !default;
+$grid-columns:               24 !default;
 $grid-gutter-width:          1.875rem !default; // 30px
 
 
@@ -124,8 +127,8 @@ $grid-gutter-width:          1.875rem !default; // 30px
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:     "Droid Sans", Arial, sans-serif !default;
+$font-family-serif:          Droid Serif, "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
 
@@ -157,7 +160,7 @@ $display4-weight:             300 !default;
 $line-height:                1.5 !default;
 
 $headings-margin-bottom:     ($spacer / 2) !default;
-$headings-font-family:       inherit !default;
+$headings-font-family:       $font-family-serif;
 $headings-font-weight:       500 !default;
 $headings-line-height:       1.1 !default;
 $headings-color:             inherit !default;
@@ -184,7 +187,7 @@ $hr-border-width:             $border-width !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
+$border-radius:          .15rem !default;
 $border-radius-lg:       .3rem !default;
 $border-radius-sm:       .2rem !default;
 
@@ -450,12 +453,12 @@ $state-danger-border:            darken($state-danger-bg, 5%) !default;
 $card-spacer-x:            1.25rem !default;
 $card-spacer-y:            .75rem !default;
 $card-border-width:        .0625rem !default;
-$card-border-radius:       .25rem !default;
+$card-border-radius:       .15rem !default;
 $card-border-color:        #e5e5e5 !default;
 $card-border-radius-inner: ($card-border-radius - $card-border-width) !default;
 $card-cap-bg:              #f5f5f5 !default;
-$card-bg:                  #fff !default;
-
+$card-bg:                  $brand-primary;
+$card-color: #fff;
 // Tooltips
 
 $tooltip-max-width:           200px !default;
@@ -558,11 +561,11 @@ $progress-bar-info-bg:        $brand-info !default;
 
 // List group
 
-$list-group-bg:                 #fff !default;
+$list-group-bg:                 transparent !default;
 $list-group-border:             #ddd !default;
 $list-group-border-radius:      $border-radius !default;
 
-$list-group-hover-bg:           #f5f5f5 !default;
+$list-group-hover-bg:           rgba(255, 255, 255, 0.20) !default;
 $list-group-active-color:       $component-active-color !default;
 $list-group-active-bg:          $component-active-bg !default;
 $list-group-active-border:      $list-group-active-bg !default;
