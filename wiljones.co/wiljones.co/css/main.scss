@@ -8,15 +8,44 @@
     &.active,
     .open > &.dropdown-toggle {
         color: #fff;
-         background-color:adjust-hue($brand-primary, -10);
+        background-color: adjust-hue($brand-primary, -10);
         border-color: #fff;
     }
 
     @include hover {
         color: #fff;
-        background-color:adjust-hue($brand-primary, -10);
+        background-color: adjust-hue($brand-primary, -10);
         border-color: #fff;
     }
 }
 
+.main-nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 
+.main-nav-item {
+    display: inline-block;
+  
+
+        &:not(:last-child):after {
+            content: "/";
+            display: inline-block;
+            position: relative;
+            right: 0;
+        }
+}
+
+
+.main-nav-link {  
+    padding: $btn-padding-y $btn-padding-x *2;
+    //@include transition(color .4s ease-in-out);
+
+    &:hover, &:focus, &:active {
+       // @include transition(color .4s ease-in-out);
+        //color: lighten($brand-primary,50%);
+        color:#fff;
+    }
+}
