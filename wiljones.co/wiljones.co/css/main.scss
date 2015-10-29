@@ -28,24 +28,29 @@
 
 .main-nav-item {
     display: inline-block;
-  
 
-        &:not(:last-child):after {
-            content: "/";
-            display: inline-block;
-            position: relative;
-            right: 0;
+
+    &:not(:last-child):after {
+        content: "/";
+        display: inline-block;
+        position: relative;
+        right: 0;
+    }
+
+    &.current {
+        .main-nav-link {
+            text-decoration: underline;
         }
+    }
 }
 
 
-.main-nav-link {  
+.main-nav-link {
     padding: $btn-padding-y $btn-padding-x *2;
     //@include transition(color .4s ease-in-out);
-
     &:hover, &:focus, &:active {
-       // @include transition(color .4s ease-in-out);
+        // @include transition(color .4s ease-in-out);
         //color: lighten($brand-primary,50%);
-        color:#fff;
+        color: #fff;
     }
 }

@@ -334,7 +334,6 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="contact.html" />
     <Content Include="css\external\prism.css" />
     <Content Include="default.aspx" />
     <Content Include="favicon-16x16.png" />
@@ -343,7 +342,6 @@
     <Content Include="favicon-96x96.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="item.html" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x150.png" />
@@ -425,6 +423,7 @@
     <Content Include="css\bootstrap\_utilities.scss" />
     <Content Include="css\bootstrap\_variables.scss" />
     <Content Include="css\main.scss" />
+    <Content Include="_newPost.html" />
     <None Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -457,6 +456,14 @@
     <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\BlogItem.cshtml" />
+    <Content Include="Views\Contact.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\MacroPartials\HomeBlogItems.cshtml" />
+    <Content Include="Views\MacroPartials\MainNav.cshtml" />
+    <Content Include="Views\MacroPartials\BlogPostsList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -471,7 +478,6 @@
     <Content Include="css\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="index.html" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />

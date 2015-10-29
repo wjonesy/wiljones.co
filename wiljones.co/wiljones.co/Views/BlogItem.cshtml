@@ -1,0 +1,12 @@
+﻿@using ClientDependency.Core.Mvc
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+    var b = Model.Content;
+    if (b.GetPropertyValue<bool>("hasCodeSnippets"))
+    {
+        Html.RequiresJs("~/scripts/prism.js");
+        Html.RequiresCss("~/css/external/prism.css");
+    }
+}<div class="row p-t-lg"><div class="col-xs-24 text-center"><h1>@b.GetPropertyValue("blogTitle")</h1>@if (b.HasValue("blogSubtitle"))
+{<h2 class="h3">@b.GetPropertyValue("blogSubtitle")</h2>}<h6>@b.CreateDate.ToString("dd/MM/yyyy")</h6></div></div><div class="row p-y-lg"><div class="col-xs-24 col-xs-push-0 col-sm-22 col-sm-push-1 col-md-18 col-md-push-3">@Html.Raw(Model.Content.GetPropertyValue<string>("blogContent"))<div class="row"><div class="col-xs-12"><a href="/blog" class="btn btn-white-outline">Back</a></div></div></div></div>
