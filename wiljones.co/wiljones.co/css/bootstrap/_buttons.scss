@@ -62,7 +62,7 @@ fieldset[disabled] a.btn {
 // Alternate buttons
 //
 
-.btn-primary {
+/*.btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
 .btn-secondary {
@@ -82,10 +82,10 @@ fieldset[disabled] a.btn {
 }
 .btn-white {
   @include button-variant(#fff, rgba(0, 0, 0, 0.00), #fff);
-}
+}*/
 
 // Remove all backgrounds
-.btn-primary-outline {
+/*.btn-primary-outline {
   @include button-outline-variant($btn-primary-bg);
 }
 .btn-secondary-outline {
@@ -102,7 +102,7 @@ fieldset[disabled] a.btn {
 }
 .btn-danger-outline {
   @include button-outline-variant($btn-danger-bg);
-}
+}*/
 .btn-white-outline {
   @include button-outline-variant(#fff);
 }

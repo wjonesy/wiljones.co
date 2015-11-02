@@ -1,10 +1,4 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Master.cshtml ";
-}
-<div class="row p-t">
-    <div class="col-xs-24 text-center">
-@Html.Raw(Model.Content.GetPropertyValue<string>("homeBlurb"))
-    </div>
-</div>
-@Umbraco.RenderMacro("HomeBlogItems")
+}<div class="row p-t"><div class="col-xs-24 text-center">@Html.Raw(Model.Content.GetPropertyValue<string>("homeBlurb"))</div></div>@Umbraco.RenderMacro("HomeBlogItems")
