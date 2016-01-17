@@ -423,7 +423,6 @@
     <Content Include="css\bootstrap\_utilities.scss" />
     <Content Include="css\bootstrap\_variables.scss" />
     <Content Include="css\main.scss" />
-    <Content Include="_newPost.html" />
     <None Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

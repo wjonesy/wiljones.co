@@ -65,7 +65,7 @@ button.list-group-item {
 
 .list-group-item {
   // Disabled state
-  &.disabled {
+  /*&.disabled {
     @include plain-hover-focus {
       color: $list-group-disabled-color;
       cursor: $cursor-disabled;
@@ -79,10 +79,10 @@ button.list-group-item {
         color: $list-group-disabled-text-color;
       }
     }
-  }
+  }*/
 
   // Active class on item itself, not parent
-  &.active {
+  /*&.active {
     @include plain-hover-focus {
       z-index: 2; // Place active items above their siblings for proper border styling
       color: $list-group-active-color;
@@ -99,7 +99,7 @@ button.list-group-item {
         color: $list-group-active-text-color;
       }
     }
-  }
+  }*/
 }
 
 
@@ -108,10 +108,10 @@ button.list-group-item {
 // Add modifier classes to change text and background color on individual items.
 // Organizationally, this must come after the `:hover` states.
 
-@include list-group-item-variant(success, $state-success-bg, $state-success-text);
+/*@include list-group-item-variant(success, $state-success-bg, $state-success-text);
 @include list-group-item-variant(info, $state-info-bg, $state-info-text);
 @include list-group-item-variant(warning, $state-warning-bg, $state-warning-text);
-@include list-group-item-variant(danger, $state-danger-bg, $state-danger-text);
+@include list-group-item-variant(danger, $state-danger-bg, $state-danger-text);*/
 
 
 // Custom content options
